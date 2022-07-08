@@ -46,6 +46,8 @@ class AgendamentoCreate(MethodView): # rota = /registro
 
             agendamento.save()
 
+            # Por conta da exposição da chave ao github mesmo dentro do .gitignore, minha conta no sendgrid foi temporariamente suspensa, logo a funcionadlidade de enviar emails pode nao estar disponivel
+            
             msg = Message(sender='pedrobolzan@poli.ufrj.br', recipients=[email], subject='Agendamento Feito', html=render_template('email.html', nome=nomeResponsavel))
             mail.send(msg)
 
