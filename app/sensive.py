@@ -1,5 +1,6 @@
 from telnetlib import SE
 
+#Por conta da exposição da chave ao github, minha conta no sendgrid foi temporariamente suspensa, logo a funcionadlidade de enviar emails pode nao estar disponivel
 
 class Sensive:
     SQLALCHEMY_DATABASE_URI = "sqlite:///data.sqlite"
